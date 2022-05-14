@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".MainActivity">
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:id="@+id/your_state_progress_bar_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        app:spb_animateToCurrentProgressState="true"
+        app:spb_checkStateCompleted="true"
+        app:spb_currentStateDescriptionColor="#0F9D58"
+        app:spb_currentStateNumber="one"
+        app:spb_maxStateNumber="four"
+        app:spb_stateBackgroundColor="#BDBDBD"
+        app:spb_stateDescriptionColor="#808080"
+        app:spb_stateForegroundColor="#0F9D58"
+        app:spb_stateNumberBackgroundColor="#808080"
+        app:spb_stateNumberForegroundColor="#eeeeee" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtquestions"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/colorAccent"
+        android:text="submit"
+        android:textColor="@color/black"
+        app:elevation="4dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuestions"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="253dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/colorAccent"
+        android:text="submit"
+        android:textColor="@color/black"
+        app:elevation="4dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuestions"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="379dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/colorAccent"
+        android:text="button1"
+        android:textColor="@color/black"
+        app:elevation="4dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuestions"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="317dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/colorAccent"
+        android:text="submit"
+        android:textColor="@color/black"
+        app:elevation="4dp" />
+
+    <TextView
+        android:id="@+id/txtQuestionsAttempted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:text="Number of questions"
+
+        android:textColor="#070707"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="63dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/txtQuestionsAttempted"
+        android:text="TextView" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/txtQuestions">
+
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/txtquestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="219dp"
+        android:text="What do you understand by sdg?"
+        android:textColor="#2196F3"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="83dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@android:color/holo_orange_light"
+        android:backgroundTint="@color/orange"
+        android:text="NEXT"
+        android:textColor="@color/colorPrimary"
+        app:backgroundTint="#4CAF50" />
+
+</RelativeLayout>

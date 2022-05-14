@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    tools:context=".NewsDetail">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/roundedImageView"
+                android:layout_width="383dp"
+                android:layout_height="211dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:src="@drawable/ndo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ndo"
+                tools:srcCompat="@drawable/ndo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="25dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/line"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/newsDetail"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="On 28th of November, 2021 during the 16 Days of Activism to end Violence Against Women, Beyond Beijing Committee Nepal (BBCN) successfully organized a National Dialogue on Generation Equality: Translating GAP in Nepal with the support of International Center for Research on Women (ICRW) with the objective to share the information to different stakeholder including CSOs, activists, advocates, feminist etc. on Generation Equality: Action Coalition Global Acceleration Plan and to discuss on translating Global Acceleration Plan to localize in Nepal to push for gender equality. The event hosted around 150 participants from diverse groups and background. i.e. government officials, CSO working on the issue of women and girls and addressing gender equality, Youths, Academia, Activists, Advocates working of gender equality, Feminist groups, Media and representatives from all 7 provinces\n
+\nFormal Inauguration of the event was conducted by Hon. Uma Regmi, Minister, MoWCSC who emphasized that “Ending violence against women should start from home” as violence against women are rooted in household and while striving for Gender Equality, ending VAW should be prioritized as safeguarding the rights of women and their well-being is an important aspect in achieving Gender Equality. Similarly, other speakers from different government ministries, commission such as: National Human Rights Commission, National Women Commission etc.  and CSOs also spoke on how can we work together to achieve gender and generation equality from grassroot to national level.\n
+\nDuring the conference 4 parallel sessions were held on 4 different action coalitions: Bodily Autonomy and Sexual and Reproductive Health and Rights, Economic Justice and Rights, Feminist Movement and Leadership and Gender Based Violence to discuss on how can we localize these global acceleration plans and achieve gender and generation equality in Nepal
+"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:text="National Dialogue on Generation Equality: Translating GAP in Nepal"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/newsDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="317dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

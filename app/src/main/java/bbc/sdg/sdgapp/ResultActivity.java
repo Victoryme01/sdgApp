@@ -1,0 +1,67 @@
+package bbc.sdg.sdgapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.QuickContactBadge;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+public class ResultActivity extends AppCompatActivity {
+    TextView tv, tv2, tv3,txtResult;
+    Button btnRestart;
+    com.mikhaellopez.circularprogressbar.CircularProgressBar circularProgressBar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_result);
+        circularProgressBar = findViewById(R.id.circularProgressBar);
+
+        tv = (TextView)findViewById(R.id.tvres);
+        tv2 = (TextView)findViewById(R.id.tvres2);
+        tv3 = (TextView)findViewById(R.id.tvres3);
+        btnRestart = (Button) findViewById(R.id.btnRestart);
+        txtResult = findViewById(R.id.txtResult);
+        StringBuffer sb = new StringBuffer();
+        sb.append("Correct answers: " + QuestionsActivity.correct + "\n");
+        StringBuffer sb2 = new StringBuffer();
+        sb2.append("Wrong Answers: " + QuestionsActivity.wrong + "\n");
+        StringBuffer sb3 = new StringBuffer();
+        sb3.append("Final Score: " + QuestionsActivity.correct + "\n");
+
+
+        circularProgressBar.setProgress(QuestionsActivity.correct);
+
+ txtResult.setText(Integer.toString(QuestionsActivity.correct) + "/14");
+
+
+
+
+
+
+        tv.setText(sb);
+        tv2.setText(sb2);
+        tv3.setText(sb3);
+
+        QuestionsActivity.correct=0;
+        QuestionsActivity.wrong=0;
+
+        btnRestart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(in);
+            }
+        });
+    }
+
+}
+

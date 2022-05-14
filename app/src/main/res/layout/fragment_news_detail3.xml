@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    tools:context=".NewsDetail">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/roundedImageView"
+                            android:layout_width="383dp"
+                            android:layout_height="211dp"
+                            android:background="@color/white"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/three"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/news"
+                            tools:srcCompat="@drawable/news" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="25dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/line"
+                    app:layout_constraintStart_toStartOf="@+id/cardView"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+                <TextView
+                    android:id="@+id/newsDetail"
+                    android:layout_width="342dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="21st January 2021, Kathmandu\n
+\nBeyond Beijing Committee Nepal has organized a meeting with community women and youth, government representatives and interface meetings including government representatives and community women and youth to monitor the implementation of SDGs and address the Citizen Generated Data by using the Community Score Card (CSC) tool specifically focusing on Goal 5 target 5.4: Recognize and value unpaid care and domestic work. This was conducted in three different municipalities at the local level of Kavre and Kathmandu. The Community score card is a tool of Community led monitoring on the status and progress of SDGs in the direct involvement of the Community people as right holders and government representatives as duty bearers. This process helps to reflect on the plans and actions that have been carried out by the duty bearers. Also, it provides a space for the duty bearers and community to jointly plan, address challenges and gpas and jointly mitigate them.
+\nThe local stakeholders and local community were oriented on the SDGs focusing on the target 5.4, Recognize and value unpaid care and domestic work. Also, to explore the status of Recognition and value unpaid care and domestic work at the local level. Due to this meeting, local stakeholders realized that the unpaid care work has not been recognized and valued as work and more effort is needed to address the issue of recognizing and addressing the unpaid care work.
+\nThe ward chair of Ward no 7, Shankharapur Municipality mentioned, “there is need to recognize and value the unpaid care work but the challenge is we lack national policies regarding this.”  While the ward chair of ward no 4, Nala, Banepa Municipality asserted “we lack national policies and programs on the recognition of unpaid care work. At the local level we can organize awareness programs on recognition and value of unpaid domestic care work targeting men and youths at the local level.”
+\nThe CSC meetings were organized in total 3 wards, targeting ward no. 7 in Shankharapur and ward no 4 and 9 in Banepa Municipality.
+"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+                <TextView
+                    android:id="@+id/newsTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="20dp"
+                    android:text="SDG Monitoring through community score card at local level with government representatives and community people"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    app:layout_constraintBottom_toTopOf="@+id/newsDetail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:layout_constraintVertical_bias="0.38" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="317dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
